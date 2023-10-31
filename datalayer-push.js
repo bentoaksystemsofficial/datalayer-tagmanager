@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $('#mc_signup_form').submit(function() {
+    jQuery('#mc_signup_form').submit(function() {
         // Prevent the form from submitting
         event.preventDefault();
         // Log the message to the console
