@@ -11,3 +11,6 @@ function datalayer_push_javascript() {
     wp_enqueue_script('datalayer-push', plugin_dir_url(__FILE__) . 'datalayer-push.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'datalayer_push_javascript');
+
+include(plugin_dir_path(__FILE__) . 'shoppingCart.php');
+include(plugin_dir_path(__FILE__) . 'checkout.php');
